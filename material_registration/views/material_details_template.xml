@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="material_details_template" name="Material Details Template">
+            <t t-name="material_registration.material_details_template">
+                <h1>Material Details</h1>
+                <p><strong>Name:</strong> <t t-esc="material.material_name"/></p>
+                <p><strong>Code:</strong> <t t-esc="material.material_code"/></p>
+                <p><strong>Type:</strong> <t t-esc="material.material_type"/></p>
+                <p><strong>Buy Price:</strong> <t t-esc="material.material_buy_price"/></p>
+                <p><strong>Supplier:</strong> <t t-esc="material.supplier_id.name"/></p>
+                <a href="/materials">Back to Material List</a>
+            </t>
+        </template>
+    </data>       
+</odoo>

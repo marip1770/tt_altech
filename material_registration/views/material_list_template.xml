@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="material_list_template" name="Material List Template">
+            <t t-name="material_registration.material_list_template">
+                <h1>Material List</h1>
+                <ul>
+                    <t t-foreach="materials" t-as="material">
+                        <li>
+                            <a t-att-href="'/material/%d' % material.id">
+                                <t t-esc="material.material_name"/>
+                            </a> - <t t-esc="material.material_type"/>
+                        </li>
+                    </t>
+                </ul>
+            </t>
+        </template>
+    </data>    
+</odoo>

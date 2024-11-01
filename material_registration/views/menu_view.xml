@@ -1,0 +1,3 @@
+<odoo>
+    <menuitem id="material_management_menu" name="Material Management" sequence="1"/>
+</odoo>
